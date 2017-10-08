@@ -12,16 +12,16 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 For each record, we provide:
 
-* A 66-feature vector with time and frequency domain variables (*X.csv*)
-* Its activity label, both as numeric ID and friendy name (*y.csv*)
-* An identifier of the subject who carried out the experiment (*subject.csv*)
+* A 66-feature vector with time and frequency domain variables (*X.txt*)
+* Its activity label, both as numeric ID and friendy name (*y.txt*)
+* An identifier of the subject who carried out the experiment (*subject.txt*)
 
-In addition, for each pair of subject (30 in total) and activity (6 in total), we provide a 66-feature vector representing the respective grouped means of the same time and frequency domain variables (*final.csv*).
+In addition, for each pair of subject (30 in total) and activity (6 in total), we provide a 66-feature vector representing the respective grouped means of the same time and frequency domain variables (*final.txt*).
 
 Additional notes:
 
 * Features are normalized and bounded within [-1,1].
-* Each feature vector is a row on the csv file.
+* Each feature vector is a row on the txt file.
 
 ## Original feature engineering
 
@@ -59,12 +59,12 @@ std: Standard deviation
 
 ## Additional feature engineering
 
-1. The raw data was provided split into a training and a test set. The first step was to recombine them, with the test set appended directly after the training set, for all of X (features), y (labels) and subject (subject data). In this step we also give a friendly name to the only column in the subject set (*subject.id*) and output it as a csv file.
+1. The raw data was provided split into a training and a test set. The first step was to recombine them, with the test set appended directly after the training set, for all of X (features), y (labels) and subject (subject data). In this step we also give a friendly name to the only column in the subject set (*subject.id*) and output it as a txt file.
 
 2. The raw data was provided with many more variables than mean and std (e.g. "kurtosis"). In order to filter down the features to only mean and std, we used a regex, thus reducing the total number of features from 561 to 66 (with values unchanged).
 
-3. We joined the y (labels) set and the activity labels so that each line contains both the numeric ID of the activity (*activity.id*) and the friendly name of the activity (*activity.name*). The result is output as csv file.
+3. We joined the y (labels) set and the activity labels so that each line contains both the numeric ID of the activity (*activity.id*) and the friendly name of the activity (*activity.name*). The result is output as txt file.
 
-4. We gave friendlier names to each feature using a small set of regex and output the result as csv file.
+4. We gave friendlier names to each feature using a small set of regex and output the result as txt file.
 
-5. We joined the subject, labels (y) and features (x) into a single data frame. Then we performed a mean aggregate grouped by subject and activity, resulting in 180 records (30 subjects x 6 activities) of 66 features. The result is output as csv file (*final.csv*).
+5. We joined the subject, labels (y) and features (x) into a single data frame. Then we performed a mean aggregate grouped by subject and activity, resulting in 180 records (30 subjects x 6 activities) of 66 features. The result is output as txt file (*final.txt*).
