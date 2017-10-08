@@ -8,3 +8,5 @@ Running the script will create a new _merged_ subdirectory (or use the existing 
 * y.csv, the merged and cleaned up labels (training + test)
 * subject.csv, the merged and cleaned up subjects (training + test)
 * final.csv, the final tidy data set containing the average of each appropriate feature for each activity/subject pair
+
+The code book *CodeBook.md* details the study design, the data set content and feature engineering.
