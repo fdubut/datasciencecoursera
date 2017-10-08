@@ -1,6 +1,6 @@
 # Instructions to clean up the Samsung Galaxy S accelerometer dataset
 
-The cleanup script is called *run_analysis.R* and assumes the working directory is _UCI HAR Dataset_ (from the original zip file).
+The cleanup script is called *run_analysis.R* and assumes the working directory is _UCI HAR Dataset_ (from the original zip file). It also requires the common *plyr* package to work properly.
 
 Running the script will create a new _merged_ subdirectory (or use the existing one) and output four files there:
 
