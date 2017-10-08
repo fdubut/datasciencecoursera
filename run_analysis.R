@@ -1,5 +1,7 @@
 # Script to clean the Samsung Galaxy S accelerometer dataset
 
+require("plyr")
+
 # 1. Merge the training and test sets
 
 dir.create("merged")
