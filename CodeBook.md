@@ -34,28 +34,28 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-time.BodyAcc.XYZ
-time.GravityAcc.XYZ
-time.BodyAccJerk.XYZ
-time.BodyGyro.XYZ
-time.BodyGyroJerk.XYZ
-time.BodyAccMag
-time.GravityAccMag
-time.BodyAccJerkMag
-time.BodyGyroMag
-time.BodyGyroJerkMag
-frequency.BodyAcc.XYZ
-frequency.BodyAccJerk.XYZ
-frequency.BodyGyro.XYZ
-frequency.BodyAccMag
-frequency.BodyAccJerkMag
-frequency.BodyGyroMag
-frequency.BodyGyroJerkMag
+* time.BodyAcc.XYZ
+* time.GravityAcc.XYZ
+* time.BodyAccJerk.XYZ
+* time.BodyGyro.XYZ
+* time.BodyGyroJerk.XYZ
+* time.BodyAccMag
+* time.GravityAccMag
+* time.BodyAccJerkMag
+* time.BodyGyroMag
+* time.BodyGyroJerkMag
+* frequency.BodyAcc.XYZ
+* frequency.BodyAccJerk.XYZ
+* frequency.BodyGyro.XYZ
+* frequency.BodyAccMag
+* frequency.BodyAccJerkMag
+* frequency.BodyGyroMag
+* frequency.BodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean: Mean value
-std: Standard deviation
+* mean: Mean value
+* std: Standard deviation
 
 ## Additional feature engineering
 
